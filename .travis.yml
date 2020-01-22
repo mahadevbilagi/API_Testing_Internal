@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+- "8.2.1"
+
+install:
+- npm install newman
+- npm install newman-reporter-html
+
+before_script:
+- node --version
+- npm --version
+- node_modules/.bin/newman --version
+
+
+script:
+- node_modules/.bin/newman run tests/Reqres-APITesting.postman_collection.json --reporters cli,html --reporter-html-export ../report.html
