@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "8ab606eb-c160-4257-9511-97dec8e1659b",
-		"name": "Reqres-APITesting",
+		"_postman_id": "cf91f44f-e721-409e-b5ca-2cc165ec60aa",
+		"name": "Reqres-APITesting_Prod",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
@@ -424,7 +424,7 @@
 											"    pm.response.to.have.status(400);",
 											"});",
 											"",
-											"pm.test(\"Check if password is missing\",function () {",
+											"pm.test(\"Check if username is missing\",function () {",
 											"      pm.expect('Missing email or username').to.have.string('Missing email or username');",
 											"}); ",
 											"",
@@ -510,7 +510,7 @@
 	],
 	"variable": [
 		{
-			"id": "2abf5b0f-1e1e-4a9d-bac7-a211e48c3087",
+			"id": "0c5de206-f430-4bb7-a997-8198335e77c4",
 			"key": "url",
 			"value": "https://reqres.in",
 			"type": "string"
