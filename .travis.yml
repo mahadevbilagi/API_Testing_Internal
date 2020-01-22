@@ -15,4 +15,7 @@ before_script:
 script:
 - node_modules/.bin/newman run tests/Reqres-APITesting_Dev.postman_collection.json --reporters cli,html --reporter-html-export ../DevReport.html
 
-lynx -dump
+notifications:
+  email:
+    - mahadev@triconinfotech.com
+    - mahadev.is57@gmail.com
