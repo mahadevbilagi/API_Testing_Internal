@@ -20,7 +20,7 @@
 										"id": "a88510ee-e799-4bb8-9af6-ebe6878277c6",
 										"exec": [
 											"",
-											"// -------Dev API testing-------",
+											"// -------Dev API testing--------",
 											"",
 											"pm.test(\"Response time is less than 200ms\", function () {",
 											"    pm.expect(pm.response.responseTime).to.be.below(3000);",
